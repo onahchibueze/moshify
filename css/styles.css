@@ -1,7 +1,7 @@
 /*typography*/
 :root{
---color-primary:#2584ff;
---color-secondary:#00d9ff;
+--color-primary:#00d9ff;
+--color-secondary:#2584ff;
 --color-accent: #ff3400;
 --color-heading:#1b0760;
 --color-body:#918ca4;
@@ -51,6 +51,30 @@ a{
     margin-left: 10px;
 
 }
+.badge{
+    border-radius: 20px;
+    font-size: 2rem;
+    font-weight: 600;
+    padding: 0.5rem 2rem;
+    white-space: nowrap;
+}
+.badge--primary{
+    background-color: var(--color-primary);
+    color: white;
+}
+.badge--secondary{
+    background-color:var(--color-secondary);
+    color: white;
+}
+.badge-small{
+    font-size: 1.25rem;
+}
+  @media screen and (min-width: 1024px) {
+    .badge--primary{
+    font-size: 1.25rem;
+
+    }
+  }
 
 
  
