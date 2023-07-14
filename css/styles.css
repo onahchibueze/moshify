@@ -15,96 +15,26 @@ body{
     line-height: 1.5; 
     color: var(--color-body);
 }
-h1, h2, h3{
-    color: var(--color-heading);
-    margin-bottom: 1rem;
-} 
-h1{
-font-size: 7rem;
-}
-h2{
-    font-size: 4rem;
-}
-h3{
-    font-size : 3rem;
-   
-}
-p{
-    margin-top: 0;
-}
-/*links*/
-a{
-    text-decoration: none;
-}
-.link-arrow{
-    color: var(--color-accent);
-    transform: uppercase;
-    font-size: 2rem;
-    font-weight: bold;
-}
-.link-arrow::after{
-    content: '-->';
-    margin-left: 5px;
-    transition: margin .15s;
-}
-.link-arrow:hover::after{
-    margin-left: 10px;
+.list{
+    list-style: none;
+    padding-left: 0;
+    color: var(--color-heading);}
+
+.list--inline .list__item{
+    display: inline-block;
+    margin-left: 2rem;
 
 }
-.badge{
-    border-radius: 20px;
-    font-size: 2rem;
-    font-weight: 600;
-    padding: 0.5rem 2rem;
-    white-space: nowrap;
+.list--tick{
+    list-style-image: url(/images/tick.svg);
+    padding-left: 3rem;
 }
-.badge--primary{
-    background-color: var(--color-primary);
-    color: white;
+.list--tick .list__item{
+    padding-left: 3rem;
+    margin-bottom: 0.5rem;
 }
-.badge--secondary{
-    background-color:var(--color-secondary);
-    color: white;
-}
-.badge-small{
-    font-size: 1.25rem;
-}
-  @media screen and (min-width: 1024px) {
-    .badge--primary{
-    font-size: 1.25rem;
-
+ @media screen and (min-width: 1024px){
+    .list--tick .list__item{
+        padding-left: 0;}
     }
-  }
-
-
- 
-
-@media screen and (min-width:  1024px) {
-    
-    
-    body{
-        font-size: 1.8rem;
-    }
-
-    h1{
-       font-size: 6rem;
-    }
-
-
-
-    h2{
-      font-size: 4rem;
-    }  
-    h3{
-      font-size: 2.4rem;  
-    }
-
-    
-    }
-    
-@media screen and (min-width:  1024px) {
-    .link-arrow{
-        font-size: 1.5rem;
-    }
-}
 
