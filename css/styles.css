@@ -5,6 +5,8 @@
 --color-accent: #ff3400;
 --color-heading:#1b0760;
 --color-body:#918ca4;
+--color-border:#ccc;
+--border-radius: 30px;
 }
 *,*::before, *::after{
     box-sizing:border-box;
@@ -14,7 +16,7 @@ html{
 }
 body{
     font-family: inter, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 2.4rem;
+   
     line-height: 1.5; 
     color: var(--color-body);
 }
@@ -93,6 +95,39 @@ body{
 @media screen and (min-width: 1024px){
     .btn{
         font-size:1.5rem;
+    }
+    
+}
+/*inputs*/
+.input{
+    border-radius: var(--border-radius);
+    border: 1px solid var(--color-border);
+    outline: 0;
+    padding: 1.5rem  3.5rem;
+    color: var(--color-heading);
+    font-size: 2rem;
+}
+::placeholder{
+    color: #cdcdcd;
+}
+.input-group{
+    border:1px solid var(--color-border) ;
+    border-radius: var(--border-radius);
+    display: flex;
+}
+.input-group .input{
+    border: 0;
+    flex-grow: 1;
+    padding: 1.5rem 1rem ;
+}
+.input-group .btn{
+    margin: 4px;
+}
+
+
+@media screen and  (min-width: 1024px) {
+    .input{
+      font-size: 1.5rem;  
     }
     
 }
