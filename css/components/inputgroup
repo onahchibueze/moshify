@@ -1,4 +1,4 @@
-<div class="input">
+<div class="input-group">
     <input type="text" class="input" placeholder="Enter domin name here">
     <button class="btn btn--accent">search</button>
 </div>
