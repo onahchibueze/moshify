@@ -268,7 +268,7 @@ a {
     box-shadow: 0 0 20px 10px #f3f3f3;
     overflow: hidden;
    font-size: 2rem;
-   width: 25%;
+  
    
 }
 .card__header,
@@ -321,6 +321,7 @@ a {
   }
   .plan .list__item{
    margin-bottom: 2rem; 
+   list-style:url(/images/tick.svg);
   }
   .plan--popular .card__header {
     position: relative;
