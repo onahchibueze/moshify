@@ -11,9 +11,20 @@
     <link rel="stylesheet" href="css/normalize.css">
 </head>
 <body>
-   
+   <section class="block block--dark block--skewed-left">
+    <div class="container grid grid--1x2">
+      
+    </div>
+   </section>
 
 </body>
-
+<script>
+  const collapsibles = document.querySelectorAll(".collapsible");
+   collapsibles.forEach((item) =>
+   item.addEventListener("click", function () {
+     this.classList.toggle("collapsible--expanded");
+   })
+ );
+ </script> 
 
 </html>
