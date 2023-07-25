@@ -186,16 +186,24 @@ a {
     }
 
     .btn{
+    
        border-radius: 40px;
        border: 0;
        cursor: pointer;
-       font-size: 1.8rem; 
+       font-size: 1.8rem;
        font-weight: 600;
+       margin: 1rem 0; 
        padding: 2rem 3rem;
-       text-transform: uppercase;
-       white-space: nowrap;
        text-align: center;
+       text-transform: uppercase;
+       white-space:nowrap;
 
+    }
+    .btn .icon{
+    height: 2rem;
+    width: 2rem; 
+    margin-right: 1rem;
+    vertical-align: middle;
     }
     .btn--primary{
     background: var(--color-primary);
@@ -215,6 +223,7 @@ a {
    .btn--accent{
     background: var(--color-accent);
     color: #fff;
+
 
    }
    .btn--stretched{
@@ -248,26 +257,36 @@ a {
 .input{
     border-radius: var(--border-radius);
     border: 1px solid var(--color-border);
-    outline: 0;
-    padding: 1.5rem  3.5rem;
     color: var(--color-heading);
     font-size: 2rem;
+    outline: 0;
+    padding: 1.5rem  3.5rem;
+  
 }
 ::placeholder{
     color: #cdcdcd;
+   
 }
 .input-group{
     border:1px solid var(--color-border) ;
     border-radius: var(--border-radius);
     display: flex;
+    
+   
 }
 .input-group .input{
     border: 0;
     flex-grow: 1;
-    padding: 1.5rem 1rem ;
+    padding: 1.5rem 1rem;
+
+
+  
 }
 .input-group .btn{
     margin: 4px;
+    
+ 
+  
 }
 
 
@@ -536,7 +555,7 @@ opacity: 1;
 }
 /* Blocks */
 .block {
-padding: var(--padding-vertical) ;
+padding: var(--padding-vertical) 0;
 }
 
 .block__header {
@@ -646,4 +665,27 @@ color:#fff;
     align-self: center;
   }
 
+}
+/*domain block*/
+.block__domain .input-group{
+  box-shadow: 0 0 30px 20px #e6ebee;
+  border: 0;
+  margin: 4rem auto;
+  max-width: 670px;
+}
+.block-domain__prices{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 6rem);
+  font-size: 2rem;
+  font-weight: 600;
+  justify-items: center;
+  max-width: 700px;
+  margin: 0 auto;
+}
+@media screen and (min-width: 768px) {
+  .block-domain__prices{
+    grid-template-columns:repeat(auto-fit, minmax(10rem, 1fr) ) ;
+  }
+  
 }
