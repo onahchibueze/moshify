@@ -100,7 +100,7 @@ a {
   font-size: 2rem;
   font-weight: 600;
   padding: 0.5rem 2rem;
-  white-space: nowrap;
+ white-space: nowrap;
 }
 
 .badge--primary {
@@ -115,6 +115,7 @@ a {
 
 .badge--small {
   font-size: 1.6rem;
+  padding: 0.5rem 1.5rem;
 }
 
 @media screen and (min-width: 1024px) {
@@ -234,13 +235,16 @@ a {
     background: #f7572f;
 }
 .btn--block{
-    width: 100%;
+ width: 100%;
     display: inline-block;
+    
 }
 .btn--outline{
     background: #fff;
     color: var(--color-heading);
     border: 2px solid var(--color-heading);
+   
+
 
 }
 .btn--outline:hover{
@@ -303,22 +307,24 @@ a {
     border-radius: 7px;
     box-shadow: 0 0 20px 10px #f3f3f3;
     overflow: hidden;
-   font-size: 2rem;
+    font-size: 2rem
+
   
    
 }
+
 .card__header,
 .card__body {
   padding: 2rem 3rem;
  
 }
 .card--primary .card__header{
-    background: var(--color-primary);
+    background-color: var(--color-primary);
     color:#fff;
 
 }
 .card--primary .card__header{
-    background: var(--color-secondary);
+    background: var(--color-primary);
     color:#fff;
 
 }
@@ -330,7 +336,13 @@ a {
   .card--secondary .badge--secondary {
     background: #02cdf1;
   }
+  .card--primary .badge--primary {
+    background: #126de4;
+  }
 /* Plans */
+.plan{
+  transition: transform .2s ease-out;
+}
 .plan_name {
     color: #fff;
     margin: 0;
@@ -340,7 +352,7 @@ a {
   }
   .plan_price{
     font-size: 6rem;
-    display: inline-block;
+
   }
   .plan_billing-cycle {
     font-size: 2.4rem;
@@ -359,6 +371,9 @@ a {
    margin-bottom: 2rem; 
    list-style:url(/images/tick.svg);
   }
+  .plan--popular{
+    transform: scale(1.1);
+  }
   .plan--popular .card__header {
     position: relative;
    
@@ -371,6 +386,12 @@ a {
     position: absolute;
     top: -6px;
     right: 5%;
+  }
+  .plan:hover{
+    transform: scale(1.05);
+  }
+  .plan--popular:hover{
+    transform: scale(1.15);
   }
   
   @media screen and (min-width: 1024px) {
@@ -688,4 +709,12 @@ color:#fff;
     grid-template-columns:repeat(auto-fit, minmax(10rem, 1fr) ) ;
   }
   
+}
+/*plan_block*/
+.block__plan .grid{
+  gap: 8rem 4rem;
+}
+.block__plan .card{
+  max-width: 500px;
+  margin: auto;
 }
